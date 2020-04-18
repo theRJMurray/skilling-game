@@ -7,8 +7,30 @@ const container_styles = {
     borderRight: '1px solid #FBFBFB'
 }
 
-const Explore = () => {
-    return <div style={container_styles}></div>
+const list_item_styles = {
+    background: '#FFF',
+    borderBottom: '1px solid black',
+    padding: 5,
+    userSelect: 'none',
+    cursor: 'pointer'
+}
+
+const zones = [
+    'Beach', 'Varoko'
+]
+
+const Explore = ({ handleViewChange }) => {
+    const changeView = input =>{ 
+        handleViewChange(input);
+    }
+
+    return <div style={container_styles}>
+        {
+            zones.map((s, i) => 
+                <div onClick={() => changeView(s)} key={i} style={list_item_styles}>{s}</div>
+            )
+        }
+    </div>
 }
 
 export default Explore

@@ -5,8 +5,24 @@ const container_styles = {
     background: '#C0FFEE'
 }
 
-const View = () => {
-    return <div style={container_styles}></div>
+const Beach = () => {
+    return <div>Beach</div>
+}
+
+const Varoko = () => {
+    return <div>Varoko</div>
+}
+
+const View = ({ selectedView }) => {
+    let page = {
+        Beach: Beach,
+        Varoko: Varoko
+    }
+    let CurrentView = page[selectedView]
+    
+    return <div style={container_styles}>
+        <CurrentView />
+    </div>
 }
 
 export default View
