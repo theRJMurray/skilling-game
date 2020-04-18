@@ -1,8 +1,16 @@
 import React from 'react';
+import Explore from './containers/Explore'
+import View from './containers/View'
+import Menu from './containers/Menu'
 import './main.css';
 
+
 const App = () => {
-	return <div>Second Commit: create-react-app setup</div>
+	return <div className='container'>
+		<Explore />
+		<View />
+		<Menu />
+	</div>
 }
 
 export default App;
