@@ -5,14 +5,6 @@ const container_styles = {
     background: '#C0FFEE'
 }
 
-const Beach = () => {
-    return <div>Beach</div>
-}
-
-const Varoko = () => {
-    return <div>Varoko</div>
-}
-
 const View = ({ selectedView }) => {
     let page = {
         Beach: Beach,

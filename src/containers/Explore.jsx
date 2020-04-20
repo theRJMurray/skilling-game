@@ -20,7 +20,7 @@ const zones = [
 ]
 
 const Explore = ({ handleViewChange }) => {
-    const changeView = input =>{ 
+    const changeView = input => { 
         handleViewChange(input);
     }
 
