@@ -1,4 +1,6 @@
 import React from 'react'
+import { useDispatch } from 'react-redux'
+import { changePage } from '../actions'
 
 const container_styles = {
     width: 240,
@@ -19,15 +21,16 @@ const zones = [
     'Beach', 'Varoko'
 ]
 
-const Explore = ({ handleViewChange }) => {
-    const changeView = input => { 
-        handleViewChange(input);
+const Explore = () => {
+    const dispatch = useDispatch();
+    const dispatchView = input => {
+        dispatch(changePage(input))
     }
 
     return <div style={container_styles}>
         {
             zones.map((s, i) => 
-                <div onClick={() => changeView(s)} key={i} style={list_item_styles}>{s}</div>
+                <div onClick={() => dispatchView(s)} key={i} style={list_item_styles}>{s}</div>
             )
         }
     </div>

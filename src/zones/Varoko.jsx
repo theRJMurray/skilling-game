@@ -4,4 +4,4 @@ const Varoko = () => {
     return <div>Varoko</div>
 }
 
-export default Beach
+export default Varoko
