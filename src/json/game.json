@@ -1,0 +1,66 @@
+{
+    "Forest": {
+        "Thick Forest": {
+            "activities": {
+                "Oak Tree": {
+                    "img": "/imgs/tree.svg",
+                    "action": "Chop"
+                },
+                "Hunt Rodent": {
+                    "img": "/imgs/tree.svg",
+                    "action": "Chop"
+                },
+                "Forage for Berries": {
+                    "img": "/imgs/tree.svg",
+                    "action": "Chop"
+                }
+            }
+        },
+        "Pond": {
+            "activities": {
+                "fishing": {
+                    "img": "/imgs/tree.svg",
+                    "action": "Chop"
+                },
+                "gathering": {
+                    "img": "/imgs/tree.svg",
+                    "action": "Chop"
+                }
+            }
+        }
+    },
+    "Varoko Village": {
+        "Lumber Mill": {
+            "activities": {
+                "refine": {
+                    "img": "/imgs/tree.svg",
+                    "action": "Chop"
+                },
+                "npc": {
+                    "img": "/imgs/tree.svg",
+                    "action": "Chop"
+                },
+                "shop": {
+                    "img": "/imgs/tree.svg",
+                    "action": "Chop"
+                }
+            }
+        },
+        "Blacksmith": {
+            "activities": {
+                "smelt": {
+                    "img": "/imgs/tree.svg",
+                    "action": "Chop"
+                },
+                "quest": {
+                    "img": "/imgs/tree.svg",
+                    "action": "Chop"
+                },
+                "craft": {
+                    "img": "/imgs/tree.svg",
+                    "action": "Chop"
+                }
+            }
+        }
+    }
+}

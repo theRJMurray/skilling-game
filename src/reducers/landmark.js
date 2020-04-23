@@ -1,10 +1,10 @@
-const viewReducer = (state = 'Forest', action) => {
+const landmarkReducer = (state = null, action) => {
     switch (action.type) {
-        case "PAGE_CHANGE":
+        case "LANDMARK":
             return action.payload;
         default:
             return state;
     }
 }
 
-export default viewReducer
+export default landmarkReducer
